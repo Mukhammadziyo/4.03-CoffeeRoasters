@@ -207,6 +207,10 @@
 }
 
 @media (max-width: 675px) {
+  .container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
   .commitment-container {
     flex-direction: column;
   }
@@ -271,6 +275,9 @@
     background-size: cover;
   }
 
+  .quality-text-heading {
+    font-size: 3rem;
+  }
   .hero-text {
     /* max-width: 279px; */
     align-items: center;

@@ -114,7 +114,8 @@
 
 .facilities__intro p {
   margin-top: 32px;
-  width: 540px;
+  max-width: 540px;
+  width: 100%;
   opacity: 80%;
   font-weight: 400;
   font-size: 1.6rem;
@@ -134,7 +135,8 @@
 
 .facilities__card {
   box-sizing: border-box;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   height: 382px;
   display: flex;
   flex-direction: column;
@@ -147,7 +149,7 @@
   border-radius: 0.8rem;
 }
 
-.facilities__card img {
+.facilities__card > img {
   width: 72px;
   height: 72px;
 }
@@ -238,4 +240,98 @@
 
 .btn {
   margin-top: 6.4rem;
+}
+
+@media (max-width: 1100px) {
+  .hero__inside {
+    background-image: url(../images/home-hero-bg-laptop.svg);
+    background-size: cover;
+  }
+  .process__line {
+    display: none;
+  }
+  .facilities__cards-container {
+    flex-direction: column;
+    row-gap: 2.4rem;
+    align-items: center;
+  }
+
+  .facilities__card {
+    max-width: 573px;
+  }
+
+  .collecation__inside {
+    flex-direction: column;
+  }
+
+  .process__inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-heading {
+    text-align: center;
+  }
+  .process__cards-container {
+    flex-direction: column;
+  }
+
+  .process__card > .process__card-heading {
+    font-size: 2.8rem;
+    max-width: 350px;
+  }
+
+  .process__card-heading,
+  .process__card-number,
+  .process__card-paragraph {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .hero__inside {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .facilities__container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .hero__heading,
+  .hero__paragraph {
+    text-align: center;
+  }
+
+  .hero__heading {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  .hero__paragraph {
+    font-size: 1.5rem;
+  }
+
+  .hero__inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .facilities__card {
+    max-width: 279px;
+    height: 400px;
+  }
+
+  .hero__inside {
+    background-image: url(../images/home-hero-bg-mobile.svg);
+  }
 }
